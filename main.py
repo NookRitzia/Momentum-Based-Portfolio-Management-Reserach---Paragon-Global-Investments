@@ -1,3 +1,6 @@
-import alpha_vantage
+import pandas
+from pandas import DatetimeIndex
 
-print("DONE!")
+dti = pandas.DatetimeIndex(['2024-07-06'], tz='America/New_York')
+dti = dti.tz_localize(None)
+print(dti)
